@@ -6,7 +6,7 @@
 /*   By: ljonas <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/10 18:13:20 by ljonas            #+#    #+#             */
-/*   Updated: 2019/09/25 20:46:04 by ljonas           ###   ########.fr       */
+/*   Updated: 2019/09/28 18:39:21 by ljonas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strcat(char *dst, const char *src)
 {
-	int a;
-	int i;
+	size_t a;
+	size_t i;
 
 	a = 0;
 	i = 0;

@@ -6,7 +6,7 @@
 /*   By: ljonas <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/24 17:34:51 by ljonas            #+#    #+#             */
-/*   Updated: 2019/09/25 20:51:08 by ljonas           ###   ########.fr       */
+/*   Updated: 2019/10/07 17:09:23 by ljonas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 char	*ft_strtrim(const char *s)
 {
 	char	*dst;
-	int		i;
-	int		len;
-	int		a;
+	size_t	i;
+	size_t	len;
+	size_t	a;
 
 	if (s == NULL)
 		return (0);

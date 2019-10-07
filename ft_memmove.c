@@ -6,7 +6,7 @@
 /*   By: ljonas <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 16:35:02 by ljonas            #+#    #+#             */
-/*   Updated: 2019/09/25 20:44:06 by ljonas           ###   ########.fr       */
+/*   Updated: 2019/09/27 18:43:47 by ljonas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {
-	register char		*d;
-	register char const	*s;
+	char		*d;
+	char const	*s;
 
 	if (!src && !dst)
 		return (NULL);

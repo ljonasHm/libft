@@ -6,12 +6,11 @@
 #    By: ljonas <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/17 19:29:53 by ljonas            #+#    #+#              #
-#    Updated: 2019/09/25 21:29:38 by ljonas           ###   ########.fr        #
+#    Updated: 2019/09/26 21:43:06 by ljonas           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-INCL = ./
 HEAD = libft.h
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror

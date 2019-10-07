@@ -6,7 +6,7 @@
 /*   By: ljonas <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/13 17:25:58 by ljonas            #+#    #+#             */
-/*   Updated: 2019/09/25 20:54:37 by ljonas           ###   ########.fr       */
+/*   Updated: 2019/09/26 20:19:21 by ljonas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,17 +25,16 @@ char	*ft_strnstr(const char *strwf, const char *strtf, size_t n)
 		a = 0;
 		if (strwf[i] == strtf[a])
 		{
-			while (strtf[a] != '\0')
+			while (strtf[a] != '\0' && strwf[i] == strtf[a])
 			{
-				if (strwf[i++] == strtf[a])
-					a++;
-				else
-					break ;
+				a++;
+				i++;
 			}
 			if (strtf[a] == '\0' && i <= n)
 				return ((char*)strwf + (i - a));
 		}
-		i++;
+		else
+			i++;
 	}
 	return (NULL);
 }
