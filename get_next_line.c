@@ -6,13 +6,13 @@
 /*   By: ljonas <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 18:19:48 by ljonas            #+#    #+#             */
-/*   Updated: 2019/11/25 17:40:29 by ljonas           ###   ########.fr       */
+/*   Updated: 2019/11/25 18:11:48 by ljonas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_new_line(char **mas, char **line, int fd)
+static int	ft_new_line(char **mas, char **line, int fd)
 {
 	char	*tmp;
 	int		len;
