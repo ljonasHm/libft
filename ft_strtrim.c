@@ -6,7 +6,7 @@
 /*   By: ljonas <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/24 17:34:51 by ljonas            #+#    #+#             */
-/*   Updated: 2019/10/07 17:09:23 by ljonas           ###   ########.fr       */
+/*   Updated: 2019/10/20 18:12:32 by ljonas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,6 @@ char	*ft_strtrim(const char *s)
 		len--;
 		i++;
 	}
-	if (len < 0)
-		len = 0;
 	if (!(dst = (char *)malloc(sizeof(*dst) * (len + 1))))
 		return (NULL);
 	a = 0;

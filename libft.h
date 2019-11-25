@@ -6,16 +6,20 @@
 /*   By: ljonas <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 19:05:44 by ljonas            #+#    #+#             */
-/*   Updated: 2019/09/28 19:26:28 by ljonas           ###   ########.fr       */
+/*   Updated: 2019/11/25 17:40:22 by ljonas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# define BUFF_SIZE 1
+# define FD_MAX 10240
 
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
+# include <sys/types.h>
+# include <sys/uio.h>
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
@@ -70,5 +74,6 @@ void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl(char const *s);
 void	ft_putnbr(int n);
 char	*ft_strndup(const char *src1, size_t n);
+int		get_next_line(const int fd, char **line);
 
 #endif

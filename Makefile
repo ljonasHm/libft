@@ -6,7 +6,7 @@
 #    By: ljonas <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/17 19:29:53 by ljonas            #+#    #+#              #
-#    Updated: 2019/09/26 21:43:06 by ljonas           ###   ########.fr        #
+#    Updated: 2019/11/25 17:21:40 by ljonas           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ SRCS = ft_strlen.c ft_strcat.c ft_isalnum.c ft_isdigit.c ft_strcmp.c \
 	   ft_strequ.c ft_strnequ.c ft_strsub.c ft_strjoin.c ft_strtrim.c \
 	   ft_strsplit.c ft_itoa.c ft_putchar.c ft_putstr.c ft_putchar_fd.c \
 	   ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c ft_putendl.c \
-	   ft_putnbr.c ft_strndup.c
+	   ft_putnbr.c ft_strndup.c get_next_line.c
 OBJS = $(subst .c,.o,$(SRCS))
 all: $(NAME)
 
